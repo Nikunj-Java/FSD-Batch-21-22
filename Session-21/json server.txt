@@ -1,0 +1,47 @@
+step:1 install json server
+----------------------------------
+npm i -g json-server
+
+Step:2 rightclick>src>create db.json file
+
+db.json
+----------------
+{
+    "posts":[]
+}
+-----------------
+
+Step:3 start json server
+-----------------------------------
+json-server --watch db.json --port 3000
+
+
+
+Step:4 create post service
+------------------------------------
+post.service.ts
+-----------------
+
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class PostService {
+
+  private apiUrl="http://localhost:3000/posts";
+  
+
+  constructor(private http:HttpClient) { }
+
+  //01 create posts
+  addPost(post:any):Observable<any>{
+    return this.http.post<any>(this.apiUrl,post);
+  }
+}
+
+
+Step:5 Create CRUD Component
+> ng g c crud

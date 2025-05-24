@@ -1,0 +1,12 @@
+
+<div class="container">
+    <div *ngFor="let p of posts" style="background-color:darkseagreen;">
+        <h3>{{p.id}}</h3>
+        <h3>{{p.title}}</h3>
+        <h3>{{p.date}}</h3>
+    </div>
+
+</div>
+<div class="container">
+    <button class="btn btn-success" (click)="addPost()">Add </button>
+</div>
