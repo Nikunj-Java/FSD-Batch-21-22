@@ -1,12 +1,13 @@
-
 <div class="container">
-    <div *ngFor="let p of posts" style="background-color:darkseagreen;">
+    <div *ngFor="let p of posts">
         <h3>{{p.id}}</h3>
         <h3>{{p.title}}</h3>
-        <h3>{{p.date}}</h3>
+        <p>{{p.date}}</p>
+        <button class="btn btn-info" (click)="updatePost(p.id)">Update</button>
+        <button class="btn btn-danger" (click)="deletePost(p.id)">Delete</button>
     </div>
-
+    
 </div>
 <div class="container">
-    <button class="btn btn-success" (click)="addPost()">Add </button>
+    <button class="btn btn-success" (click)="addPost()">Add</button>
 </div>

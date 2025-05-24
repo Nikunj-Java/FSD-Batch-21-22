@@ -27,4 +27,13 @@ export class CrudComponent implements OnInit {
     this.postService.getPosts().subscribe(post=>{this.posts=post});
   }
 
+   updatePost(postId:number):void{
+    const updatePost={title:'New Updated  Post', date:"New Updated date"};
+    this.postService.updatePost(postId,updatePost).subscribe(()=>{this.loadPosts();});
+  }
+
+  deletePost(postId:number):void{
+    
+    this.postService.deletePost(postId).subscribe(()=>{this.loadPosts();});
+  }
 }
