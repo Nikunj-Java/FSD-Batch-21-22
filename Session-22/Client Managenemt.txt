@@ -1,0 +1,29 @@
+Step:1 Create angular app
+> ng new Client-App
+
+Step:2 Create Components
+> ng g c client
+> ng g c meetings
+
+Step:3 Angular Routing
+add path of components in routing
+
+Step:4 install Bootstrap
+> npm install bootstrap
+import it in style.css file
+
+Step:5 in app.component.html file add navigation
+
+Step:6 create client.db and meetings.db files
+
+Step:7 install json server and start on port no 3000
+
+Step:8 now create add client functionality on client component
+
+Step:9 create add/schedule meeting functionality on meeting component
+
+Step:10 get the list the of scheduled meetings on the meetings.component.html file 
+
+Step:11 you can also add update and delete functionality (extra)
+
+
