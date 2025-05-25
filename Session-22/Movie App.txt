@@ -1,0 +1,18 @@
+Step:1 Create React App 
+> npm create vite@latest
+	select React,JavaScript
+
+Step:2 Create Component Folder
+	> create SearchMovie component
+	> create List Top Movie Component
+Step:3 use react features: useeffect,useState,useRedux,react-boostrap to decorate Search movies by different categories
+
+Step:4 list the top movies in the new component / or you can show case in the above component only
+
+Step:5 install Bootstrap
+
+Step:6 import bootstrap in main.jsx
+
+Step:7 add react routing to route in the application
+
+Step:8 Reference:  https://github.com/Nikunj-Java/JAVAFSD_2025/tree/main/Phase-1/Session-16/weather-app
